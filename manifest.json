@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2
+    , "name": "Robotframework Assistant"
+    , "description": "Robotframework Assistant"
+    , "version": "0.1.1"
+    , "author": "Yulin Jin"
+    , "icons": {
+        "16": "icon.png"
+        , "128": "icon.png"
+    }
+    , "browser_action": {
+        "default_icon": {
+            "16": "icon.png"
+        }
+        , "default_popup": "src/popup.html"
+    }
+    , "content_scripts": [{
+            "matches": ["http://*/*", "https://*/*"]
+            , "js": ["libs/jquery-3.1.1.min.js", "src/recorder.js", "src/recorder-ui.js", "src/recorder-handler.js", "src/recorder-main.js"]
+            , "css": ["src/css/recorder.css"]
+        }
+    ]
+    , "permissions": [
+        "activeTab"
+        , "clipboardWrite"
+        , "https://*/"
+        , "http://*/"
+        , "tabs"
+        , "storage"
+    ]
+}

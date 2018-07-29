@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Roboframework Assistant</title>
+    <link rel="stylesheet" href="../libs/jquery-ui/jquery-ui.css">
+    <script src="../libs/jquery-ui/external/jquery/jquery.js"></script>
+    <script src="../libs/jquery-ui/jquery-ui.js"></script>
+    <script src="popup.js"></script>
+    <style>
+        body {
+            min-width: 500px
+        }
+    </style>
+</head>
+
+<body>
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">Record/Replay</a></li>
+            <li><a href="#tabs-2">JIRA Issue</a></li>
+            <li><a href="#tabs-3">Data Driven</a></li>
+        </ul>
+        <div id="tabs-1">
+            <fieldset>
+                <legend>Test Recorder UI</legend>
+                <div id="controlgroup">
+                    <form style="margin-top: 1em;">
+                        <div id="radioset">
+                            <input type="radio" id="recorder-ui-on" name="radio">
+                            <label for="recorder-ui-on">On</label>
+                            <input type="radio" id="recorder-ui-off" name="radio">
+                            <label for="recorder-ui-off">Off</label>
+                        </div>
+                    </form>
+                </div>
+            </fieldset>
+        </div>
+        <div id="tabs-2">
+            <p>JIRA Issue placeholder</p>
+        </div>
+        <div id="tabs-3">
+            <p>Data Driven placeholder</p>
+        </div>
+    </div>
+</body>
+
+</html>

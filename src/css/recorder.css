@@ -1,0 +1,47 @@
+#recorderDialog {
+    position: fixed;
+    overflow: hidden;
+    z-index: 10000;
+    display: none;
+}
+
+#recorderDialog #recorderTitle {
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    height: 20px;
+    padding: 2px;
+}
+
+#recorderDialog #recorderContent {
+    min-width: 550px;
+    padding: 2px;
+    background-color: purple;
+    color: white;
+    display: block;
+    border: 2px solid black;
+}
+
+#recorderDialog #recorderTitle:hover {
+    cursor: move;
+    background: gray;
+}
+
+#recorderDialog #recorderToolBar {
+    padding: 2px;
+    background-color: purple;
+}
+
+.recorderToolBarButton {
+    background-color: #44367D;
+    border: none;
+    color: white;
+    padding: 2px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 1px 1px;
+    cursor: pointer;
+    border-radius: 8px;
+}
